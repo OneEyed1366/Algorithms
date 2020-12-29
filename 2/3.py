@@ -1,18 +1,17 @@
 from sys import argv
 
-class Reverse_num():
-  try:
-    donor_num = int(argv[1])
-  except IndexError:
-    donor_num = int(input("Введите любое Положительное число: "))
-  
-  result = 0
+def reverse_num():
+    try:
+        donor_num = int(argv[1])
+    except IndexError:
+        donor_num = int(input("Введите любое Положительное число: "))
+    
+    result = 0
 
-  def __init__(self):
-    while self.donor_num > 0:
-        self.result = self.result * 10 + self.donor_num % 10
-        self.donor_num = self.donor_num // 10
+    while donor_num > 0:
+        result = result * 10 + donor_num % 10
+        donor_num = donor_num // 10
 
-    print(f"Результат: {self.result}")
+    print(f"Результат: {result}")
 
-Reverse_num()
+reverse_num()

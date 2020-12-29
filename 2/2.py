@@ -1,18 +1,17 @@
 from sys import argv
 
-class Nums():
-  try:
-    donor_num = int(argv[1])
-  except IndexError:
-    donor_num = int(input("Введите любое Положительное число: "))
-  
-  result = 0
+def nums():
+    try:
+        donor_num = int(argv[1])
+    except IndexError:
+        donor_num = int(input("Введите любое Положительное число: "))
 
-  def __init__(self):
-    for i in map(int, str(self.donor_num)):
-      if i % 2 == 0:
-        self.result += 1
-    
-    print(f"Число: {self.donor_num}, чётных чисел: {self.result}")
+    result = 0
 
-Nums()
+    for i in map(int, str(donor_num)):
+        if i % 2 == 0:
+            result += 1
+
+    print(f"Число: {donor_num}, чётных чисел: {result}")
+
+nums()
