@@ -1,4 +1,4 @@
-def Math_with_2_nums():
+def math_with_2_nums():
     exceptable = [
         "0",
         "+",
@@ -41,4 +41,4 @@ def Math_with_2_nums():
     else:
         print("Вы завершили выполнение программы. Хорошего дня!")
 
-Math_with_2_nums()
+math_with_2_nums()
