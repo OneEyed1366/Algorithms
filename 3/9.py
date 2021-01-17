@@ -1,5 +1,5 @@
 from random import randrange
-# Запутался в 3 соснах. Постараюсь доделать в ближайшие 7 дней
+
 def min_col_matrix():
     donor_matrix = [[randrange(-20, 20) for i in range(5)] for col in range(4)]
     cols_list = [[donor_matrix[j][i] for j in range(len(donor_matrix))] for i in range(len(donor_matrix[0]))]
